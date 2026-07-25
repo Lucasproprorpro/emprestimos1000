@@ -22,11 +22,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      # 3) Flutter na versão que o projeto declara (pubspec: >=3.24.0)
+      # 3) Flutter estável recente (plugins como geolocator exigem SDK 35)
       - name: Configurar Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.0'
+          flutter-version: '3.44.7'
           channel: stable
           cache: true
 
